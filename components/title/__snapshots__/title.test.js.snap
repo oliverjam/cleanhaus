@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title component Renders correctly 1`] = `
+.c0 {
+  font-size: 2em;
+  font-weight: normal;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
