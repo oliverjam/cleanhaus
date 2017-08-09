@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox component Renders correctly 1`] = `
+.c5 {
+  margin-left: 1rem;
+}
+
+.c3 {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #8592ad;
+  border-radius: 2px;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.c1 {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.c1:focus ~ .c2 {
+  box-shadow: 0 0 0 2px white,0 0 0 4px tomato;
+}
+
+.c1:checked ~ .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-color: tomato;
+  background-color: tomato;
+  color: #f9fafb;
+}
+
+.c1:checked ~ .c2::after {
+  content: '✔';
+}
+
+.c1:checked ~ .c4 {
+  text-decoration: line-through;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+<label
+  className="c0"
+  htmlFor="test"
+>
+  <input
+    className="c1"
+    id="test"
+    type="checkbox"
+  />
+  <span
+    className="c2 c3"
+  />
+  <span
+    className="c4 c5"
+  >
+    Lorem ipsum
+  </span>
+</label>
+`;

@@ -1,11 +1,18 @@
 import React from "react";
+import Page from "../components/page/page";
 import Title from "../components/title/title";
-import Checkbox from "../components/checkbox/checkbox";
+import List from "../components/list/list";
+
+const entries = [
+  { name: "Oli", id: 1 },
+  { name: "Alexis", id: 2 },
+  { name: "Colin", id: 3 }
+];
 
 const index = () =>
-  <div>
-    <Title>Hello world!</Title>
-    <Checkbox id="1" label="Check me" />
-  </div>;
+  <Page>
+    {/* <Title>Cleaning Rota</Title> */}
+    <List entries={entries} />
+  </Page>;
 
 export default index;

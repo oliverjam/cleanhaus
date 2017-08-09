@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page component Renders correctly 1`] = `
+.c0 {
+  width: 100%;
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+<main
+  className="c0"
+>
+  Lorem Ipsum
+</main>
+`;

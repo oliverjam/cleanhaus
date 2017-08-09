@@ -1,3 +1,4 @@
+import React from "react";
 import Document, { Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 import theme from "../styles/theme";
@@ -11,6 +12,7 @@ export default class MyDocument extends Document {
       <html lang="en">
         <Head>
           <title>Cleanhaus</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <style>
             {`*,
             *::before,
@@ -33,7 +35,7 @@ export default class MyDocument extends Document {
             }
             body {
               font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-              color: ${theme.palette.dark};
+              color: ${theme.palette.textDark};
             }`}
           </style>
           {styleTags}
