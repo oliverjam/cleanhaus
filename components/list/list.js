@@ -1,15 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import theme from "../../styles/theme";
+import React from 'react';
+import styled from 'styled-components';
+import theme from '../../styles/theme';
 
-import Checkbox from "../checkbox/checkbox";
+import Checkbox from '../checkbox/checkbox';
 
 const Item = styled.li`
   & + & {
     border-top: 1px solid ${theme.palette.lightGrey};
-  }
-  &:hover {
-    background-color: ${theme.palette.offWhite};
   }
 `;
 
@@ -19,11 +16,18 @@ const List = styled.ul`
   box-shadow: 0 1px 2px ${theme.palette.shadow};
 `;
 
-export default ({ entries }) =>
+export default ({ entries, handleChange }) =>
   <List>
     {entries.map(entry =>
       <Item key={entry.id}>
-        <Checkbox id={entry.id} label={entry.name} />
+        <Checkbox
+          id={entry.id}
+          label={entry.name}
+          day={entry.day}
+          month={entry.month}
+          checked={entry.done}
+          handleChange={handleChange}
+        />
       </Item>
     )}
   </List>;

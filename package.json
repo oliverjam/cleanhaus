@@ -13,8 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "firebase": "^4.2.0",
     "next": "^2.4.9",
     "polished": "^1.3.0",
+    "re-base": "^3.0.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "styled-components": "^2.1.2"
